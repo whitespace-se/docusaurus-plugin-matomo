@@ -1,6 +1,6 @@
 {
   "name": "@whitespace-se/docusaurus-plugin-matomo",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Matomo analytics plugin for Docusaurus with Tag Manager support",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
