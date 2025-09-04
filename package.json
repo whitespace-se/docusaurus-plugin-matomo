@@ -1,0 +1,42 @@
+{
+  "name": "@whitespace-se/docusaurus-plugin-matomo",
+  "version": "1.0.0",
+  "description": "Matomo analytics plugin for Docusaurus with Tag Manager support",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "keywords": [
+    "docusaurus",
+    "plugin",
+    "matomo",
+    "analytics",
+    "tag-manager"
+  ],
+  "author": "Whitespace AB <code@whitespace.se>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whitespace-se/docusaurus-plugin-matomo.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {
+    "@docusaurus/core": "^3.0.0",
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@docusaurus/core": "^3.5.2",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf lib"
+  }
+}
