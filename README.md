@@ -1,4 +1,4 @@
-# @whitespace-se/docusaurus-plugin-matomo
+# Docusaurus Plugin Matomo
 
 ## Description
 
