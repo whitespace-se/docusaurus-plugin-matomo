@@ -19,6 +19,14 @@ export default function pluginMatomo(
     debug = false,
   } = options;
 
+  // Validate required options
+  if (!siteId && !tagManagerContainerId) {
+    console.warn('Matomo plugin: Either siteId or tagManagerContainerId is required');
+  }
+  if (!matomoUrl) {
+    console.warn('Matomo plugin: matomoUrl is required');
+  }
+
   const isProd = process.env.NODE_ENV === 'production';
   const shouldTrack = (isProd || debug) && trackingEnabled;
 

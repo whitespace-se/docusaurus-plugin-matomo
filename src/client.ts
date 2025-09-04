@@ -9,9 +9,10 @@ const clientModule: ClientModule = {
       location.search !== previousLocation.search ||
       location.hash !== previousLocation.hash
     )) {
-      if (window._paq) {
+      if (window._paq && typeof window._paq.push === 'function') {
         // Track page view for SPA navigation
-        window._paq.push(['setCustomUrl', location.pathname + location.search + location.hash]);
+        const customUrl = (location.pathname || '') + (location.search || '') + (location.hash || '');
+        window._paq.push(['setCustomUrl', customUrl]);
         window._paq.push(['setDocumentTitle', document.title]);
         window._paq.push(['trackPageView']);
       }
